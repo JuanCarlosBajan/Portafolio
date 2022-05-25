@@ -1,0 +1,31 @@
+@import '../Gen/mixin', '../Gen/colors.scss';
+
+body {
+  margin: 0%;
+  color: white;
+}
+
+.principal_div {
+  display: grid;
+  grid-template-columns:
+    [linename1] minmax(200px, 25vw)
+    [linename2] minmax(200px, 75vw);
+  background-color: $bg_tertiary;
+}
+
+.side_bar_item {
+  min-width: 200px;
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: $bg_primary;
+}
+
+.components_item {
+  width: 75vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: $bg_secondary;
+}
