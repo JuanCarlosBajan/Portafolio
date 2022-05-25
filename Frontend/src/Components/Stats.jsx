@@ -35,7 +35,7 @@ export default function Stats(props) {
               className={progress[props.title]}
             ></circle>
           </svg>
-          <span className={text[props.title]}>{props.data}</span>
+          <span className={text[props.title]}>{props.data}%</span>
         </div>
         <div className="language_title">{props.title}</div>
       </div>

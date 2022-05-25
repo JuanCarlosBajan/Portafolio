@@ -29,20 +29,20 @@
 }
 
 $color-black: hsl(0, 0%, 5%);
-$color-color: hsl(0, 0%, 100%);
+$color-color: white;
 
-$color-spanish: hsl(0, 100%, 60%);
-$color-english: hsl(15, 100%, 60%);
-$color-python: hsl(220, 100%, 60%);
-$color-js: hsl(60, 100%, 60%);
-$color-ts: hsl(220, 100%, 60%);
-$color-html: hsl(15, 100%, 60%);
-$color-css: hsl(200, 100%, 60%);
-$color-scss: hsl(300, 100%, 60%);
-$color-node: hsl(110, 100%, 60%);
-$color-react: hsl(180, 100%, 60%);
-$color-unity: hsl(0, 0%, 100%);
-$color-postgres: hsl(145, 100%, 60%);
+$color-spanish: #ffda54;
+$color-english: #ffda54;
+$color-python: #ffda54;
+$color-js: #ffda54;
+$color-ts: #ffda54;
+$color-html: #ffda54;
+$color-css: #ffda54;
+$color-scss: #ffda54;
+$color-node: #ffda54;
+$color-react: #ffda54;
+$color-unity: #ffda54;
+$color-postgres: #ffda54;
 
 $porcent-spanish: 30;
 $porcent-english: 23;
@@ -79,7 +79,7 @@ $porcent-postgres: 19;
   stroke-width: 5;
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
-  stroke: aliceblue;
+  stroke: #ffda54;
   stroke-linecap: round;
   transform: translate(5px, 5px); // stroke-width / 2
 }
@@ -153,7 +153,7 @@ $porcent-postgres: 19;
 .progressbar__text {
   position: absolute;
   padding: 0.25em 0.5em;
-  color: aliceblue;
+  color: #ffda54;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0.25em;
   font-size: x-small;
