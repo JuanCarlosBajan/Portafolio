@@ -1,0 +1,26 @@
+@import '../Gen/mixin', '../Gen/colors.scss';
+
+.coding_bar_container {
+  width: 100%;
+  min-height: 55px;
+  height: 9vh;
+  background-color: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.coding_bar_title_text {
+  width: 100%;
+  text-align: start;
+  font-weight: bold;
+  font-size: medium;
+  color: white;
+}
+
+.percentage_text {
+  width: 100%;
+  text-align: end;
+  font-weight: 400;
+  font-size: small;
+  color: white;
+}
