@@ -1,0 +1,90 @@
+@import '../Gen/mixin', '../Gen/colors.scss';
+
+.personal_profile {
+  min-width: 200px;
+  width: 25vw;
+  min-height: 130px;
+  height: 30vh;
+  display: grid;
+  background-color: $bg_primary;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal_info {
+  min-width: 200px;
+  width: 25vw;
+  height: 70vh;
+  background-color: $bg_secondary;
+  justify-content: center;
+}
+
+.picture {
+  width: 90px;
+  height: 90px;
+  background-color: aliceblue;
+  border-radius: 50% 50% 35% 30% / 50% 50% 30% 30%;
+}
+
+.picture_container {
+  display: flex;
+  min-width: 200px;
+  width: 25vw;
+  min-height: 70px;
+  height: 18vh;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.text_name {
+  min-width: 200px;
+  width: 25vw;
+  min-height: 30px;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.text_profession {
+  min-width: 200px;
+  width: 25vw;
+  min-height: 30px;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-size: medium;
+  font-weight: 100;
+}
+
+.social_media {
+  min-width: 200px;
+  width: 25vw;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language_skills {
+  min-width: 200px;
+  width: 25vw;
+  min-height: 100px;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coding_knowledge {
+  min-width: 200px;
+  width: 25vw;
+  height: 50vh;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
