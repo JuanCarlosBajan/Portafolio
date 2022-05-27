@@ -10,7 +10,7 @@ function App() {
       <div className="side_bar_item">
         <SideBar />
       </div>
-      <div>
+      <div className="content_item">
         <Routes>
           <Route path="/" element={<Dashboard />} />
         </Routes>

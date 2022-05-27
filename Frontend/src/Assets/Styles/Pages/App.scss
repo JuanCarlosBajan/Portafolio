@@ -29,3 +29,8 @@ body {
   justify-content: center;
   background-color: $bg_secondary;
 }
+
+.content_item {
+  overflow-y: scroll;
+  max-height: 100vh;
+}
