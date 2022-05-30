@@ -5,9 +5,9 @@ export default function Title() {
   return (
     <>
       <div className="title_container">
-        <img className="title_img" src={title}></img>
-        <div className="title_general_text">
-          EL ARTE DESAFÍA A LA TECNOLOGÍA Y LA TECNOLOGÍA INSPIRA EL ARTE
+        <img id="titleimg" hidden className="title_img" src={title}></img>
+        <div id="titletext" hidden className="title_general_text">
+          ART CHALLENGES TECHNOLOGY AND TECHNOLOGY INSPIRES ART
         </div>
       </div>
     </>

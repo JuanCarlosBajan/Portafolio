@@ -1,0 +1,39 @@
+.element_info {
+  display: grid;
+  grid-row: 33% 33% 33%;
+  width: 50%;
+  height: 100%;
+}
+
+.element_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $text_color;
+  font-size: x-large;
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.element_description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $text_color;
+  font-size: small;
+  font-family: 'Baloo Tammudu 2', cursive;
+  text-align: center;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.element_tecnologies {
+  width: 100%;
+  text-align: center;
+}
+
+.element_img {
+  width: 50%;
+  height: 100%;
+  border-radius: 1vw;
+  object-fit: cover;
+}
