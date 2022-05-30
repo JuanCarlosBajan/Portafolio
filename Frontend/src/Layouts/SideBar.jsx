@@ -1,16 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 //import { Divider } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
 import { SiGmail } from 'react-icons/si';
+import { Skeleton } from '@chakra-ui/react';
+import JuanCa from '../Assets/Images/JuanCa.jpg';
 import Stats from '../Components/Stats.jsx';
 
 export default function SideBar() {
+  useEffect(() => {
+    const imgPersonal = document.getElementById('personal_picture');
+    const connectedCircle = document.getElementById('connected');
+    const provissionalImg = document.getElementById('provissional_picture_img');
+    imgPersonal.onload = () => {
+      provissionalImg.hidden = true;
+      imgPersonal.hidden = false;
+      connectedCircle.hidden = false;
+    };
+  });
+
   return (
     <div>
       <div className="personal_profile">
         <div className="picture_container">
-          <div className="picture"></div>
+          <div className="picture">
+            <img
+              id="personal_picture"
+              hidden
+              className="juanca_picture"
+              src={JuanCa}
+            ></img>
+            <Skeleton
+              id="provissional_picture_img"
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div id="connected" hidden className="color_circle"></div>
         </div>
         <div className="text_name">Juan Carlos Baján</div>
         <div className="text_profession">Computer Science Student</div>
