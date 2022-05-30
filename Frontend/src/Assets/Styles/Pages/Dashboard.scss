@@ -1,5 +1,3 @@
-@import '../Gen/mixin', '../Gen/colors.scss';
-
 .dashboard_container {
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -9,21 +7,28 @@
 
 .title_img {
   width: 71vw;
+  height: 40vh;
   opacity: 0.5;
   border-radius: 1vw;
+  object-fit: cover;
 }
 
 .title_container {
   position: relative;
   text-align: center;
-  color: $text_color;
 }
 
 .title_general_text {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 50vw;
   transform: translate(-50%, -50%);
+  font-size: xx-large;
+  word-spacing: 10px;
+  font-weight: bold;
+  color: $text_color;
+  font-family: 'Baloo Tammudu 2', cursive;
 }
 
 .projects_container {
@@ -43,11 +48,13 @@
   color: $text_color;
   height: 100%;
   width: 100%;
+  font-family: 'Baloo Tammudu 2', cursive;
 }
 
 .project_grid_container {
   border-radius: 1vw;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .project_grid_container:hover {

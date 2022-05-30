@@ -1,5 +1,10 @@
-@import './Components/SideBar.scss';
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap');
+@import './Gen/mixin';
+@import './Gen/colors.scss';
+@import './Gen/variables.scss';
 @import './Pages/App.scss';
+@import './Components/SideBar.scss';
 @import './Components/CodingBar.scss';
 @import './Components/LanguageStats.scss';
 @import './Pages/Dashboard.scss';
+@import './Pages/Games.scss';
