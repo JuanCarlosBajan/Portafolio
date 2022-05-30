@@ -1,5 +1,3 @@
-@import '../Gen/mixin', '../Gen/colors.scss';
-
 .language_circular_progress_container {
   width: 65px;
   display: grid;
@@ -12,6 +10,7 @@
   font-weight: 100;
   color: $text_color;
   margin-top: -10px;
+  font-family: 'Baloo Tammudu 2', cursive;
 }
 
 .language_grid {
@@ -19,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .section_primary_title {
@@ -26,6 +26,7 @@
   margin-top: 0px;
   font-size: medium;
   font-weight: bold;
+  font-family: 'Baloo Tammudu 2', cursive;
 }
 
 $color-black: hsl(0, 0%, 5%);
@@ -76,46 +77,48 @@ $porcent-postgres: 19;
   width: 100%;
   height: 100%;
   fill: none;
-  stroke-width: 5;
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
   stroke: #ffda54;
   stroke-linecap: round;
-  transform: translate(5px, 5px); // stroke-width / 2
-  border: 0.5px solid #ffda54;
+  transform: translate(5px, 5px);
 }
 
 .shadow {
   &-spanish {
-    filter: drop-shadow(0 0 5px $color-spanish);
+    filter: drop-shadow(0 0 2px $color-spanish);
   }
   &-english {
-    filter: drop-shadow(0 0 5px $color-english);
+    filter: drop-shadow(0 0 2px $color-english);
   }
   &-python {
-    filter: drop-shadow(0 0 5px $color-python);
+    filter: drop-shadow(0 0 2px $color-python);
   }
   &-scss {
-    filter: drop-shadow(0 0 5px $color-scss);
+    filter: drop-shadow(0 0 2px $color-scss);
   }
   &-js {
-    filter: drop-shadow(0 0 5px $color-js);
+    filter: drop-shadow(0 0 2px $color-js);
   }
   &-ts {
-    filter: drop-shadow(0 0 5px $color-ts);
+    filter: drop-shadow(0 0 2px $color-ts);
   }
   &-node {
-    filter: drop-shadow(0 0 5px $color-node);
+    filter: drop-shadow(0 0 2px $color-node);
   }
   &-react {
-    filter: drop-shadow(0 0 5px $color-react);
+    filter: drop-shadow(0 0 2px $color-react);
   }
   &-unity {
-    filter: drop-shadow(0 0 5px $color-unity);
+    filter: drop-shadow(0 0 2px $color-unity);
   }
   &-postgres {
-    filter: drop-shadow(0 0 5px $color-postgres);
+    filter: drop-shadow(0 0 2px $color-postgres);
   }
+}
+
+.progressbar__text:hover {
+  filter: drop-shadow(0 0 10px $color-postgres);
 }
 
 .circle {
@@ -158,6 +161,9 @@ $porcent-postgres: 19;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0.25em;
   font-size: x-small;
+  cursor: pointer;
+  transition: 0.5s;
+  filter: drop-shadow(0 0 1px #ffda548a);
   //transform: translate(-50%, -50%) ;
 }
 
