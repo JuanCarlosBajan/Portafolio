@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-//import { Divider } from '@chakra-ui/react';
 import { FaGithub } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
 import { SiGmail } from 'react-icons/si';
-import { Skeleton } from '@chakra-ui/react';
+import { Skeleton, useToast } from '@chakra-ui/react';
 import JuanCa from '../Assets/Images/JuanCa.jpg';
 import Stats from '../Components/Stats.jsx';
 
@@ -18,6 +17,8 @@ export default function SideBar() {
       connectedCircle.hidden = false;
     };
   });
+
+  const toast = useToast();
 
   return (
     <div>
@@ -43,9 +44,35 @@ export default function SideBar() {
       </div>
       <div className="personal_info">
         <div className="social_media">
-          <FaGithub size={36} color="aliceblue" />
-          <RiInstagramFill size={40} color="aliceblue" />
-          <SiGmail size={40} color="aliceblue" />
+          <FaGithub
+            size={36}
+            color="aliceblue"
+            cursor="pointer"
+            onClick={() => {
+              window.location.replace('https://github.com/JuanCarlosBajan');
+            }}
+          />
+          <RiInstagramFill
+            size={40}
+            color="aliceblue"
+            cursor="pointer"
+            onClick={() => {
+              window.location.replace('https://www.instagram.com/jcbajan17/');
+            }}
+          />
+          <SiGmail
+            size={40}
+            color="aliceblue"
+            cursor="pointer"
+            onClick={() => {
+              navigator.clipboard.writeText('juancarlosbajan@hotmail.com');
+              toast({
+                title: 'Copied mail to clipboard',
+                position: 'top-left',
+                isClosable: true,
+              });
+            }}
+          />
         </div>
         <div className="language_title section_primary_title">Languages</div>
         <div className="language_skills">
