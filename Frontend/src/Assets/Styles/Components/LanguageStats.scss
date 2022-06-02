@@ -18,7 +18,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .section_primary_title {
@@ -161,7 +160,6 @@ $porcent-postgres: 19;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0.25em;
   font-size: x-small;
-  cursor: pointer;
   transition: 0.5s;
   filter: drop-shadow(0 0 1px #ffda548a);
   //transform: translate(-50%, -50%) ;
