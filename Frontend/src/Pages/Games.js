@@ -27,7 +27,7 @@ export default function Games() {
     {
       title: 'The Key House',
       imgs: [TKH1, TKH2, TKH3, TKH4, TKH5],
-      github: '',
+      github: ['https://github.com/JuanCarlosBajan/The-Key-House'],
       description:
         '3D Game developed with unity. Has three different levels. Simulates different scaping rooms, contains different tracks and an ending scene. All maps were modeled with blender.',
       tecnologies: [
@@ -48,9 +48,9 @@ export default function Games() {
     {
       title: 'Metaverse',
       imgs: [MV1, MV2, MV3, MV4, MV5],
-      github: '',
+      github: ['https://github.com/JuanCarlosBajan/metaverse'],
       description:
-        '3D Game developed with unity. It is based on SDG 14, marine life, and was developed with the purpose of making the population aware of the damage that is being caused. The map and some components were created with blender.',
+        '3D Game developed with unity. It is based on SDG 14, marine life, and was created with the purpose of making the population aware of the damage that is being caused. The map and some components were created with blender.',
       tecnologies: [
         {
           title: 'Unity',
@@ -67,9 +67,9 @@ export default function Games() {
       ],
     },
     {
-      title: 'Duck hunt',
+      title: 'Duck Hunt',
       imgs: [DH4, DH2, DH3, DH1],
-      github: '',
+      github: ['https://github.com/JuanCarlosBajan/CazaPatos-Juego-'],
       description:
         '3D Game developed with unity. This project was created with the purpose of practicing RPG dynamics. Almost every model was created with blender.',
       tecnologies: [
@@ -90,7 +90,7 @@ export default function Games() {
     {
       title: 'Little Planet',
       imgs: [LP1, LP2, LP3, LP4, LP5],
-      github: '',
+      github: ['https://github.com/JuanCarlosBajan/Juego-Planeta-Chiquito-'],
       description:
         '3D Game developed with unity. First person controllers and special ilumination. The map and all the components were created with blender.',
       tecnologies: [
@@ -118,10 +118,11 @@ export default function Games() {
       {projects.map((project) => (
         <Element
           key={project.title}
-          img={project.imgs[0]}
+          imgs={project.imgs}
           title={project.title}
           description={project.description}
           tecnologies={project.tecnologies}
+          github={project.github}
         />
       ))}
     </div>
