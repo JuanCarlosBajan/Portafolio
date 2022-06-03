@@ -41,10 +41,10 @@ export default function Web() {
         },
         {
           title: 'PostgreSQL',
-          color: 'blue',
+          color: 'green',
         },
         {
-          title: 'Knex',
+          title: 'KnexJS',
           color: 'orange',
         },
         {

@@ -43,7 +43,7 @@ export default function MoreInfo(props) {
       >
         <ModalOverlay backdropFilter="blur(10px) hue-rotate(10deg)" />
         <ModalContent
-          backgroundColor={'rgb(51, 53, 80)'}
+          backgroundColor={'#366ed8'}
           color={'aliceblue'}
           width={'50vw'}
         >
@@ -56,16 +56,16 @@ export default function MoreInfo(props) {
                 <Tooltip
                   label={getLabel(props.github.length, index)}
                   placement="top-end"
-                  bg={'aliceblue'}
-                  color={'rgb(51, 53, 80)'}
+                  bg={'#f2f3f3'}
+                  color={'#366ed8'}
                   hasArrow
                 >
                   <Button
                     leftIcon={<FaGithub />}
                     colorScheme="gray"
                     variant="solid"
-                    color={'rgb(51, 53, 80)'}
-                    backgroundColor="aliceblue"
+                    color={'#366ed8'}
+                    backgroundColor="#f2f3f3"
                     marginX={'1vw'}
                     onClick={() => {
                       redirect(element);
@@ -80,7 +80,7 @@ export default function MoreInfo(props) {
               {props.tecnologies.map((element) => (
                 <Badge
                   key={props.title + element.title}
-                  variant="outline"
+                  variant="solid"
                   colorScheme={element.color}
                   marginX="0.5vw"
                 >

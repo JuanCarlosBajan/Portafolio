@@ -26,33 +26,21 @@ export default function Dashboard() {
         <Title />
         <div className="projects_container">
           <SimpleGrid columns={3} spacing={'2vw'}>
-            <Box
-              bg="rgb(51, 53, 80)"
-              height="30vh"
-              className="project_grid_container"
-            >
+            <Box bg="#366ed8" height="30vh" className="project_grid_container">
               <Link className="grid_projects" to="/Games">
-                <FaGamepad size={100} color="aliceblue" />
+                <FaGamepad size={100} className="dashboard_icon" />
                 <div className="projects_title">Games</div>
               </Link>
             </Box>
-            <Box
-              bg="rgb(51, 53, 80)"
-              height="30vh"
-              className="project_grid_container"
-            >
+            <Box bg="#366ed8" height="30vh" className="project_grid_container">
               <Link className="grid_projects" to="/Apps">
-                <FaAppStore size={100} color="aliceblue" />
+                <FaAppStore size={100} className="dashboard_icon" />
                 <div className="projects_title">Apps</div>
               </Link>
             </Box>
-            <Box
-              bg="rgb(51, 53, 80)"
-              height="30vh"
-              className="project_grid_container"
-            >
+            <Box bg="#366ed8" height="30vh" className="project_grid_container">
               <Link className="grid_projects" to="/Web">
-                <FaHtml5 size={100} color="aliceblue" />
+                <FaHtml5 size={100} className="dashboard_icon" />
                 <div className="projects_title">Web</div>
               </Link>
             </Box>
@@ -62,19 +50,19 @@ export default function Dashboard() {
               <SimpleGrid columns={3} spacing={'2vw'}>
                 <Box height="30vh">
                   <div className="grid_projects">
-                    <FiHeadphones size={100} color="aliceblue" />
+                    <FiHeadphones size={100} className="dashboard_icon" />
                     <div className="projects_title">Music Lover</div>
                   </div>
                 </Box>
                 <Box height="30vh">
                   <div className="grid_projects">
-                    <CgCross size={100} color="aliceblue" />
+                    <CgCross size={100} className="dashboard_icon" />
                     <div className="projects_title">Jesus Follower</div>
                   </div>
                 </Box>
                 <Box height="30vh">
                   <div className="grid_projects">
-                    <AiOutlineStock size={100} color="aliceblue" />
+                    <AiOutlineStock size={100} className="dashboard_icon" />
                     <div className="projects_title">Investor</div>
                   </div>
                 </Box>

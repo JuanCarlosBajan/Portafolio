@@ -19,7 +19,7 @@ export default function Element(props) {
             {props.tecnologies.map((element) => (
               <Badge
                 key={props.title + element.title}
-                variant="outline"
+                variant="solid"
                 colorScheme={element.color}
                 marginX="0.5vw"
               >

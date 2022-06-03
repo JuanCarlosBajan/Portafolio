@@ -46,7 +46,7 @@ export default function SideBar() {
         <div className="social_media">
           <FaGithub
             size={36}
-            color="aliceblue"
+            className="sidebar_icon"
             cursor="pointer"
             onClick={() => {
               window.location.replace('https://github.com/JuanCarlosBajan');
@@ -54,7 +54,7 @@ export default function SideBar() {
           />
           <RiInstagramFill
             size={40}
-            color="aliceblue"
+            className="sidebar_icon"
             cursor="pointer"
             onClick={() => {
               window.location.replace('https://www.instagram.com/jcbajan17/');
@@ -62,7 +62,7 @@ export default function SideBar() {
           />
           <SiGmail
             size={40}
-            color="aliceblue"
+            className="sidebar_icon"
             cursor="pointer"
             onClick={() => {
               navigator.clipboard.writeText('juancarlosbajan@hotmail.com');

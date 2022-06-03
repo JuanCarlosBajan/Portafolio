@@ -1,5 +1,5 @@
 import React from 'react';
-import title from '../Assets/Images/title.png';
+import title from '../Assets/Images/MetaverseGame/1.png';
 
 export default function Title() {
   return (
