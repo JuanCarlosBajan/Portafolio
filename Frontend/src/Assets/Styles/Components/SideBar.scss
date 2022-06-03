@@ -35,11 +35,11 @@
 .color_circle {
   width: 10px;
   height: 10px;
-  background-color: #ffda54;
+  background-color: $color-connected;
   margin-left: -10px;
   margin-bottom: 5px;
   border-radius: 5px;
-  filter: drop-shadow(0 0 5px #ffda54);
+  filter: drop-shadow(0 0 5px $color-connected);
 }
 
 .picture_container {
@@ -105,4 +105,14 @@
   display: inline;
   justify-content: center;
   align-items: center;
+}
+
+.sidebar_icon {
+  color: $text_color;
+  transition: 0.5s;
+}
+
+.sidebar_icon:hover {
+  color: $color-stats;
+  filter: drop-shadow(0 0 2px $color-stats);
 }

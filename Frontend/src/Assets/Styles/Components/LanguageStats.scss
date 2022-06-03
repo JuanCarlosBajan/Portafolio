@@ -31,19 +31,6 @@
 $color-black: hsl(0, 0%, 5%);
 $color-color: white;
 
-$color-spanish: #ffda54;
-$color-english: #ffda54;
-$color-python: #ffda54;
-$color-js: #ffda54;
-$color-ts: #ffda54;
-$color-html: #ffda54;
-$color-css: #ffda54;
-$color-scss: #ffda54;
-$color-node: #ffda54;
-$color-react: #ffda54;
-$color-unity: #ffda54;
-$color-postgres: #ffda54;
-
 $porcent-spanish: 30;
 $porcent-english: 23;
 $porcent-python: 25;
@@ -78,46 +65,47 @@ $porcent-postgres: 19;
   fill: none;
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
-  stroke: #ffda54;
+  stroke: $color-stats;
   stroke-linecap: round;
+  stroke-width: 2px;
   transform: translate(5px, 5px);
 }
 
 .shadow {
   &-spanish {
-    filter: drop-shadow(0 0 2px $color-spanish);
+    filter: drop-shadow(0 0 2px $color-stats);
   }
   &-english {
-    filter: drop-shadow(0 0 2px $color-english);
+    filter: drop-shadow(0 0 2px $color-stats);
   }
   &-python {
-    filter: drop-shadow(0 0 2px $color-python);
+    filter: drop-shadow(0 0 2px $color-stats);
   }
   &-scss {
-    filter: drop-shadow(0 0 2px $color-scss);
+    filter: drop-shadow(0 0 2px $color-stats);
   }
   &-js {
-    filter: drop-shadow(0 0 2px $color-js);
+    filter: drop-shadow(0 0 2px $color-stats);
   }
   &-ts {
-    filter: drop-shadow(0 0 2px $color-ts);
+    filter: drop-shadow(0 0 2px $color-stats);
   }
   &-node {
-    filter: drop-shadow(0 0 2px $color-node);
+    filter: drop-shadow(0 0 2px $color-stats);
   }
   &-react {
-    filter: drop-shadow(0 0 2px $color-react);
+    filter: drop-shadow(0 0 2px $color-stats);
   }
   &-unity {
-    filter: drop-shadow(0 0 2px $color-unity);
+    filter: drop-shadow(0 0 2px $color-stats);
   }
   &-postgres {
-    filter: drop-shadow(0 0 2px $color-postgres);
+    filter: drop-shadow(0 0 2px $color-stats);
   }
 }
 
 .progressbar__text:hover {
-  filter: drop-shadow(0 0 10px $color-postgres);
+  filter: drop-shadow(0 0 10px $color-stats);
 }
 
 .circle {
@@ -156,12 +144,12 @@ $porcent-postgres: 19;
 .progressbar__text {
   position: absolute;
   padding: 0.25em 0.5em;
-  color: #ffda54;
+  color: $text_color;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 0.25em;
   font-size: x-small;
   transition: 0.5s;
-  filter: drop-shadow(0 0 1px #ffda548a);
+  filter: drop-shadow(0 0 1px $text_color);
   //transform: translate(-50%, -50%) ;
 }
 

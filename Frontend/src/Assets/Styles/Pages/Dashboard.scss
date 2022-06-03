@@ -1,16 +1,17 @@
 .dashboard_container {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .title_img {
   width: 71vw;
   height: 40vh;
-  opacity: 0.5;
+  opacity: 1;
   border-radius: 1vw;
   object-fit: cover;
+  animation: 1s ease-out 0s 1 appear2;
 }
 
 .title_container {
@@ -49,16 +50,38 @@
   height: 100%;
   width: 100%;
   font-family: 'Baloo Tammudu 2', cursive;
+  transition: 0.5s;
 }
 
 .project_grid_container {
   border-radius: 1vw;
   cursor: pointer;
   transition: 0.5s;
+  animation: 1s ease-out 0s 1 appear2;
 }
 
 .project_grid_container:hover {
-  filter: drop-shadow(0 0 5px $color-node);
+  filter: drop-shadow(0 0 5px $bg_primary);
+
+  .dashboard_icon {
+    color: $color-stats;
+    filter: drop-shadow(0 0 2px $color-stats);
+  }
+
+  .projects_title {
+    color: $color-stats;
+    filter: drop-shadow(0 0 2px $color-stats);
+  }
+
+  .element_title {
+    color: $color-stats;
+    filter: drop-shadow(0 0 2px $color-stats);
+  }
+}
+
+.dashboard_icon {
+  color: $text_color;
+  transition: 0.5s;
 }
 
 .hobbies_container {
@@ -67,4 +90,13 @@
   border-radius: 1vw;
   background-color: $bg_primary;
   padding: 2vh;
+}
+
+@keyframes appear2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
